@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora la naturaleza salvaje y vive emocionantes aventuras al aire libre con nosotros. ¡Descubre tu lado más aventurero!">
+    <meta name="robots" content="index">
+    <meta name="robots" content="follow">
+    <meta name="author" content="Guillermo Pimentel González">
+    <meta name="keywords" content="aventuras, naturaleza, deporte">
+    <meta name="category" content="spanish, spain, aventuras">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <title>Aventuras Gato Pardo</title>
+</head>
+<body class="pag-principal">
+    <header class="index-header">
+        <section class="caja-principal-header">
+            <div class="foto-header">
+                <img src="../assets/images/header/logo.jpg" alt="logo" class="logo" width="1024" height="1024">
+            </div>
+            <div class="titulo-header">
+                <h1>Aventuras Gato Pardo</h1>
+                <h2>Toda clase de experiencias deportivas en plena naturaleza</h2>
+            </div>
+        </section>
+        <nav class="index-nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../views/galeria.html">Galería</a></li>
+                <li><a href="../views/presupuesto.html" class="activo">Presupuesto</a></li>
+                <li><a href="../views/contacto.html">Contacto</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <main class="m-presu">
+        
+
+        <form id="presupuestoForm">
+            <h2>Formulario de Presupuesto</h2>
+            <!-- Datos de contacto -->
+            <div class="form-section">
+                
+                <h3>Datos de Contacto</h3>
+                <label for="nombre">Nombre (máx. 15 caracteres):</label>
+                <input type="text" id="nombre" name="nombre" maxlength="15" required>
+                
+                <label for="apellidos">Apellidos (máx. 40 caracteres):</label>
+                <input type="text" id="apellidos" name="apellidos" maxlength="40" required>
+                
+                <label for="telefono">Teléfono (9 dígitos):</label>
+                <input type="text" id="telefono" name="telefono" maxlength="9" required>
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Presupuesto -->
+            <div class="form-section">
+                <h3>Presupuesto</h3>
+                
+                <!-- Producto -->
+                <label for="producto">Elige una experiencia:</label>
+                <select id="producto" name="producto" required>
+                    <option value="" disabled selected>Selecciona una experiencia</option>
+                    <option value="70">Barranquismo - 70€</option>
+                    <option value="80">Ciclismo - 80€</option>
+                    <option value="100">Escalada - 100€</option>
+                    <option value="160">Esquí-Snow - 160€</option>
+                    <option value="40">Senderismo - 40€</option>
+                </select>
+
+                <!-- Plazo -->
+                <label for="plazo">Plazo en meses (aplica descuento):</label>
+                <input type="number" id="plazo" name="plazo" min="1" value="1" required>
+
+                <!-- Extras -->
+                <div class="extras">
+                    <h3>Extras (cada uno aumenta el costo):</h3>
+                    <label><input type="checkbox" class="extra" value="50"> Alquiler de material (50€)</label>
+                    <label><input type="checkbox" class="extra" value="70"> Reportaje en vídeo-foto (70€)</label>
+                    <label><input type="checkbox" class="extra" value="80"> Transporte (80€)</label>
+                </div>
+
+                <!-- Presupuesto final -->
+                <p class="result">Presupuesto Total: €<span id="presupuestoTotal">0</span></p>
+            </div>
+
+            <!-- Condiciones y envío -->
+            <div class="form-section">
+                <label><input type="checkbox" id="condiciones" required> Acepto las condiciones de privacidad</label>
+                
+                <button type="submit">Enviar</button>
+                <button type="reset">Resetear</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="index-footer">
+        <div class="copy-rrss">
+           <div class="copy">
+               <p>© 2023 Aventuras Gato Pardo. Todos los derechos reservados.</p>
+           </div>
+           <div class="container-rrss">
+               <div class="rrss">
+                <a href="https://www.facebook.com/?locale=es_ES" target="_blank"><img class="facebook" src="../assets/images/rrss/facebook.png" alt="facebook"></a>
+                <a href="https://twitter.com" target="_blank"><img class="twitter" src="../assets/images/rrss/twitter.png" alt="twitter"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="instagram" src="../assets/images/rrss/instagram.png" alt="instagram"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img class="youtube" src="../assets/images/rrss/youtube.png" alt="youtube"></a>
+                  
+               </div>
+           </div>
+        </div>
+        <div class="enlaces">
+            <div class="aviso">
+              <a href="../assets/documents/avisoLegal.pdf" target="_blank">Aviso Legal</a>
+            </div>
+            <div class="f-mapa">
+              <a href="https://www.google.com/maps/place/C.+la+Barrera,+3,+28743+Canencia,+Madrid/@40.9060149,-3.7405985,17z/data=!3m1!4b1!4m6!3m5!1s0xd43e003792d1dc5:0x684f7bfd6e8c7495!8m2!3d40.9060149!4d-3.7387683!16s%2Fg%2F11c2dgbpkt?entry=ttu&g_ep=EgoyMDI0MDkxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Donde estamos</a>
+            </div>
+            <div class="f-contacto">
+              <a href="mailto:correo@ejemplo.com">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/presupuesto.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+[
+    {
+        "nombre": "Excursión de Escalada",
+        "fecha": "20-09-2024",
+        "ubicacion": "La Pedriza"
+    },
+    {
+        "nombre": "Ruta de Senderismo",
+        "fecha": "25-09-2024",
+        "ubicacion": "Valle de Lozolla"
+    },
+    {
+        "nombre": "Descenso de Barrancos",
+        "fecha": "30-09-2024",
+        "ubicacion": "Cañón del Río Lobos"
+    },
+    {
+        "nombre": "Ruta de Ciclismo",
+        "fecha": "07-10-2024",
+        "ubicacion": "Pueblo de Canencia"
+    },
+    {
+        "nombre": "Esquí",
+        "fecha": "Fecha por determinar",
+        "ubicacion": "Pista de La Pinilla"
+    },
+    {
+        "nombre": "Snow",
+        "fecha": "Fecha por determinar",
+        "ubicacion": "Pista de La Pinilla"
+    }
+]
